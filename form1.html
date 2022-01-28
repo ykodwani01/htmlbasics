@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+  <title>APA</title>
+
+  
+
+  <script>
+
+
+function valid()
+
+{
+
+
+if ((document.form1.gender[0].checked==false)&&(document.form1.gender[1].checked==false))
+
+{
+
+alert("pls enter your gender");
+
+document.form1.gender[0].focus();
+
+return false;
+
+}
+
+
+
+if ((document.form1.group[0].checked==false)&&(document.form1.group[1].checked==false))
+
+{
+alert("pls enter your group");
+document.form1.group[1].focus();
+
+return false;
+
+}
+
+
+var x=document.form1.txtfname.value;
+if(x=="" || x==null){
+alert("please enter your first name);
+return false;
+}
+}
+
+  
+
+</script>
+
+
+
+
+</head><body style="background-color: rgb(173, 216, 230);">
+<h1>xyz SCHOOL,AHMEDABAD</h1>
+
+<br>
+
+<h2>ADMISSION FORM FOR HIGHER SECONDARY</h2>
+
+<form name="form1" action="PRO.xlsx" method="post" onsubmit="return valid()">
+  <center>
+  <table>
+    
+      <tbody><tr>
+        <td>first name</td>
+        <td>&nbsp;</td>
+        <td><input name="txtfname" type="text"></td>
+      </tr>
+      <tr>
+        <td>middle name</td>
+        <td>&nbsp;</td>
+        <td><input name="txtmname" type="textbox"></td>
+      </tr>
+      <tr>
+        <td> last name</td>
+        <td>&nbsp;</td>
+        <td><input name="txtlname" type="textbox"></td>
+      </tr>
+      <tr>
+        <td>gender</td>
+        <td>&nbsp;</td>
+        <td><input name="gender" value="male"  type="radio">MALE</td>
+        <td><input name="gender" value="fmale" type="radio">FEMALE</td>
+      </tr>
+      <tr>
+        <td>CATEGORY</td>
+        <td>
+        <select name="CASTE">
+        <option>GENERAL</option>
+        <option>OBC</option>
+        <option>SC/ST</option>
+        </select>
+        </td>
+      </tr>
+      <tr>
+        <td>ENTER YOUR DATE OF BIRTH</td>
+        <td><input name="DOB" type="DATE">
+        </td>
+      </tr>
+      <tr>
+        <td>STREAM</td>
+        <td>&nbsp;</td>
+        <td><input name="SUB" value="COMM" checked="checked" type="radio">COMMERCE</td>
+        <td><input name="SUB" value="SCI" type="radio">SCIENCE</td>
+      </tr>
+      <br>
+      <tr>
+        <td>FOR SCIENCE</td>
+        <td><input name="GRP" value="A" type="checkbox">A(MATHS)</td>
+        <td><input name="GRP" value="B" type="checkbox">B(BIOLOGY)</td>
+      </tr>
+      <tr>
+        <td>FOR COMMERCE</td>
+        <td><input name="GRC" value="H" type="radio">HINDI</td>
+        <td><input name="GRC" value="G" type="radio">GUJARATI</td>
+      </tr>
+      <tr>
+        <td>ENTER YOUR PHONE NO&gt;</td>
+        <td><input name="phon" type="text"></td>
+      </tr>
+      <br>
+      <tr>
+        <td>ENTER YOUR SSC MARKS HERE</td>
+      </tr>
+      <tr>
+        <td>MATHS:<input name="MATMAR" type="number"></td>
+        <td>SCIENCE:<input name="SCIMAR" type="number"></td>
+        <td>ENGLISH:<input name="ENGMAR" type="number"></td>
+      </tr>
+      <tr>
+        <td>address</td>
+        <td>&nbsp;</td>
+        <td><textarea name="adrs" rows="5" cols="20">ENTER ADDRSESS HERE</textarea></td>
+      </tr>
+      <tr>
+        <td>UPLOAD YOUR MARKSHEET IMAGE</td>
+        <td><input name="datafile" type="file"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>
+        <input name="submit" type="submit"></td>
+      </tr>
+    </tbody>
+  </table>
+  </center>
+</form>
+
+</body></html>
